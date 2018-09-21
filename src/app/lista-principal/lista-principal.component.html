@@ -1,0 +1,75 @@
+<div class="nav-side-menu">
+  <div class="brand">Brand Logo</div>
+  <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+  <div class="menu-list">
+
+    <ul id="menu-content" class="menu-content collapse out">
+      <li [routerLink]="[{ outlets: {menu: ['Modulos'] } }]">
+        <a >
+          <i class="fa fa-dashboard fa-lg"></i>
+          Consultar Modulos
+        </a>
+      </li>
+
+      <!-- <li [routerLink]="[{ outlets: {menu: ['CrearModulo'] } }]" data-toggle="collapse" data-target="#products" class="collapsed active">
+        <a >
+          <i class="fa fa-gift fa-lg"></i>
+          Crear modulo
+        </a>
+      </li> -->
+      <!-- <ul class="sub-menu collapse" id="products">
+                  <li class="active"><a href="#">CSS3 Animation</a></li>
+                  <li><a  [routerLink]="[{ outlets: {menu: ['Modulos'] } }]">General</a></li>
+                  <li><a href="#">Buttons</a></li>
+                  <li><a href="#">Tabs & Accordions</a></li>
+                  <li><a href="#">Typography</a></li>
+                  <li><a href="#">FontAwesome</a></li>
+                  <li><a href="#">Slider</a></li>
+                  <li><a href="#">Panels</a></li>
+                  <li><a href="#">Widgets</a></li>
+                  <li><a href="#">Bootstrap Model</a></li>
+              </ul> -->
+
+
+      <li data-toggle="collapse" data-target="#service" class="collapsed">
+        <a [routerLink]="[{ outlets: {menu: ['Modulos'] } }]"><i class="fa fa-globe fa-lg"></i> Services </a>
+      </li>
+      <!-- <ul class="sub-menu collapse" id="service">
+                <li>New Service 1</li>
+                <li>New Service 2</li>
+                <li>New Service 3</li>
+              </ul> -->
+
+
+      <li data-toggle="collapse" data-target="#new" class="collapsed">
+        <a [routerLink]="[{ outlets: {menu: ['Modulos'] } }]">
+          <i class="fa fa-car fa-lg"></i>
+          New
+        </a>
+      </li>
+      <!-- <ul class="sub-menu collapse" id="new">
+                <li>New New 1</li>
+                <li>New New 2</li>
+                <li>New New 3</li>
+              </ul> -->
+
+
+      <li>
+        <a [routerLink]="[{ outlets: {menu: ['Modulos'] } }]">
+          <i class="fa fa-user fa-lg"></i> Profile
+        </a>
+      </li>
+
+      <li>
+        <a [routerLink]="[{ outlets: {menu: ['Modulos'] } }]">
+          <i class="fa fa-users fa-lg"></i> Users
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="contenedor-menu">
+  <router-outlet name="menu">
+  </router-outlet>
+</div>

@@ -1,0 +1,33 @@
+<table>
+  <thead>
+    <tr>
+      <th>
+        Procedimiento
+      </th>
+      <th>
+        identificador
+      </th>
+      <th>
+        Modulo
+      </th>
+      <th>
+
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let i of allComponente">
+      <td>{{i.sp}}</td>
+      <td>{{i.id}}</td>
+      <td>{{i.Componente}}</td>
+      <td>
+        <button [routerLink]="[{ outlets: {menu: ['Modulos'] } }]" class="btn fa fa-check cc-cursor"></button>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3"></td>
+      <td> <button class="btn fa fa-plus" [routerLink]="['/Inicio',{ outlets: {menu: ['CrearModulo'] } }]"></button></td>
+    </tr>
+  </tbody>
+</table>
+

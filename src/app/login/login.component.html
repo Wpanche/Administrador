@@ -1,0 +1,20 @@
+
+
+<div class="col-md-offset-4 col-md-4 col-md-offset-4 ">
+  <div class="col-md-12">
+    <label>Usuario:</label>
+    <div>
+      <input [(ngModel)]="usuario" type="text" class="form-control" />
+    </div>
+  </div>
+  <div class="col-md-12">
+    <label>Contraseña</label>
+    <div>
+      <input [(ngModel)]="log" type="password" class="form-control" />
+    </div>
+  </div>
+  <div class="col-md-12 st-top-2x">
+    <button (click)="LoginIn()" class="btn-full-with btn btn-default">Ingresar</button>
+    <div><a href="">¿Olvido su contraseña?</a></div>
+  </div>
+</div>
